@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Higor - Barbearia</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="produtos.css">
+	</head>
+
+	<body>
+		<header id="home" >
+			<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> para importar uma fonte com link -->
+			<div class="caixa">
+				<div class="menubar"></div>
+				<h1><img src="imagens/logo-branco.png" class="logo1" alt="Logo da barbearia do Higor"></h1>
+				<nav>
+					<ul class="menuoption"> 
+						<li><a href="#home">Home</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#produtos">Produtos</a></li>
+						<li><a href="#mapa">Localização</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+
+		<main>
+			<section id="sobre">
+				<h3>Sobre a Barbearia:</h3>
+				<p>Localizada no coração de Guarulhos, a Barbearia do Higor traz para o mercado o que há de melhor para seu cabelo e barba. Nossa missão é Proporcionar auto-estima e qualidade de vida aos clientes. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes. </p>
+				<img src="imagens/beneficios.jpg" class="beneficiosjpg">
+			</section>
+			<section id="produtos">
+				<h3>Nossos Serviços</h3>
+				<ul class="products">
+					<li>
+						<h2>Cabelo</h2>
+						<img src="imagens/cabelo.jpg">
+						<p class="desc">Na tesoura ou máquina, como o cliente preferir</p>
+						<p class="preco">R$ 25,00 </p>
+					</li>
+					<li>
+						<h2>Barba</h2>
+						<img src="imagens/barba.jpg">
+						<p class="desc">Corte e desenho profissional de barba</p>
+						<p class="preco">R$ 18,00</p>
+					</li>
+					<li>
+						<h2>Cabelo + Barba</h2>
+						<img src="imagens/cabelo+barba.jpg">
+						<p class="desc">Pacote completo de cabelo e barba</p>
+						<p class="preco">R$ 35,00</p>
+					</li>	
+				</ul>
+				<!-- <div class="video">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				</div>
+			</section>
+			<section id="mapa">
+				<h3>Localização</h3>
+				<p> A barbearia do Higor está na Av. Dr. Timóteo Penteado, 4478 - Vila Galvão, Guarulhos - SP, 07061-003 </p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.0377834267756!2d-46.56678618446881!3d-23.459101563710263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5a5144245fd%3A0x104a86e9ac94df97!2sLeos%20Cabeleireiros!5e0!3m2!1spt-BR!2sbr!4v1646666824690!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+			</section>
+			<section id="contato">
+				<h3>Contato</h3>
+				<form>
+					<label for="nomecompleto">Nome Completo</label>
+					<input type="text" id="nomecompleto" class="input-padrao" required >
+					<!-- required = obrigatorio, placeholder = coloca texto -->
+					<label for="email">Email</label>
+					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@email.com">
+
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXXXX">
+
+					<label for="mensagem">Mensagem</label>
+					<textarea cols="80" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+					<fieldset>
+						<legend> Como prefere o contato? </legend>
+						<label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+						
+
+						<label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+						 <!-- QUANDO USA NAME RESTRINGE PARA SELECIONAR APENAS UMA OPCAO -->
+
+						<label for="radio-whats"> <input type="radio" name="contato" value="whats" id="radio-whats" checked> WhatsApp</label>
+						
+					</fieldset>
+					<fieldset>
+						<legend> Qual horário prefere ser atendido?</legend>
+						<select>
+							<option>Manhã</option>
+							<option>Tarde</option>
+							<option>Noite</option>
+						</select>
+					</fieldset>	
+
+					<label class="checkbox"><input type="checkbox" checked> Gostaria de receber novidades por email?</label>
+
+
+					<input class="enviar" type="submit">
+
+				</form>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Dia</th>
+							<th>Horário</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Terça</td>
+							<td>8h ~ 20h</td>
+						</tr>
+
+						<tr>
+							<td>Quarta</td>
+							<td>8h ~ 20h</td>
+						</tr>
+						<tr>
+							<td>Quinta</td>
+							<td>8h ~ 20h</td>
+						</tr>
+						<tr>
+							<td>Sexta</td>
+							<td>8h ~ 20h</td>
+						</tr>
+						<tr>
+							<td>Sábado</td>
+							<td>8h ~ 20h</td>
+						</tr>
+					</tbody>
+
+					
+
+
+				</table>
+			</section>
+		</main>	
+
+		<footer>
+			<img src="imagens/logo-branco.png" alt="logo da barbearia do higor">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+		</footer>
+	</body>
+
+</html>
